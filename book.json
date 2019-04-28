@@ -9,12 +9,7 @@
     },
     "structure": {
         "readme": "README.md"
-    },
-    "links": {
-        "sidebar": {
-            "我的狗窝": "https://blankj.com"
-        }
-    },
+    }
     "plugins": [
         "-sharing",
         "splitter",
