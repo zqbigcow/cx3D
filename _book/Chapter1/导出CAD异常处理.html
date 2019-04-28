@@ -1,0 +1,961 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>第2节：导出CAD异常处理 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-toggle-chapters/toggle.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="导出CAD异常处理.html" />
+    
+    
+    <link rel="prev" href="异常弹窗处理方法.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    说明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    3D软件常见问题问答
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html">
+            
+                    
+                    第1节：异常弹窗处理方法
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.1.1" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w1">
+            
+                    
+                    没有注册类
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.2" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w2">
+            
+                    
+                    二维状态下墙体散开
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.3" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w3">
+            
+                    
+                    打开软件或是画图时提示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.4" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w4">
+            
+                    
+                    输入软件号和授权码后出现错误提示窗
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.5" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w5">
+            
+                    
+                    渲染时出现下列弹窗(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.6" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w6">
+            
+                    
+                    渲染时出现下列弹窗(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.7" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w7">
+            
+                    
+                    启动软件时提示“找不到指定模块”
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.8" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w8">
+            
+                    
+                    打开软件或是在操作软件时有下面提示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.9" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w9">
+            
+                    
+                    二维转三维时提示“3D意外退出”
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.10" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w10">
+            
+                    
+                    提示.Net FramE work错误
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.11" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w11">
+            
+                    
+                    出现自动保存弹窗
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.12" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w12">
+            
+                    
+                    WIN10电脑打开应用软件弹窗时会使软件关闭，怎么设置？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.13" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w13">
+            
+                    
+                    画图时提示“内存不足”
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.14" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w14">
+            
+                    
+                    提示函数调用失败
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.15" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w15">
+            
+                    
+                    某种操作导致程序异常
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.1.16" data-path="异常弹窗处理方法.html">
+            
+                <a href="异常弹窗处理方法.html#w16">
+            
+                    
+                    场景异常导致的软件关闭
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter active" data-level="1.2.2" data-path="导出CAD异常处理.html">
+            
+                <a href="导出CAD异常处理.html">
+            
+                    
+                    第2节：导出CAD异常处理
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.2.1" data-path="导出CAD异常处理.html">
+            
+                <a href="导出CAD异常处理.html#w1">
+            
+                    
+                    CAD导出空白问题
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.2" data-path="导出CAD异常处理.html">
+            
+                <a href="导出CAD异常处理.html#w2">
+            
+                    
+                    出现下列异常弹窗(1)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.3" data-path="导出CAD异常处理.html">
+            
+                <a href="导出CAD异常处理.html#w3">
+            
+                    
+                    出现下面异常弹窗(2)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.4" data-path="导出CAD异常处理.html">
+            
+                <a href="导出CAD异常处理.html#w4">
+            
+                    
+                    出现下面异常弹窗(3)
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.2.5" data-path="导出CAD异常处理.html">
+            
+                <a href="导出CAD异常处理.html#w5">
+            
+                    
+                    无法打印全部标注
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3" data-path="操作规范.html">
+            
+                <a href="操作规范.html">
+            
+                    
+                    第3节：操作规范
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.2.3.1" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w1">
+            
+                    
+                    画墙的规范操作，什么厚度的墙应该有什么注意事项？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.2" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w2">
+            
+                    
+                    如何在房间自动生成吊顶的时候生成两部分？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.3" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w3">
+            
+                    
+                    如何绘制弧形吊顶及墙体？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.4" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w4">
+            
+                    
+                    如何在绘制弧形吊顶和矩形吊顶时进行切换？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.5" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w5">
+            
+                    
+                    如何快速绘制户型？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.6" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w6">
+            
+                    
+                    浏览场景有哪些快捷键？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.7" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w7">
+            
+                    
+                    软件意外退出时，需要在哪里找回场景？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.8" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w8">
+            
+                    
+                    保存场景的方式，如何给别人发送场景？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.9" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w9">
+            
+                    
+                    如何整体修改所有柜体的花色和基材？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.10" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w10">
+            
+                    
+                    如何控制产品不能移动？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.11" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w11">
+            
+                    
+                    如何柜体成组？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.12" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w12">
+            
+                    
+                    如何一键添加及删除饰品？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.13" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w13">
+            
+                    
+                    如何撤销操作？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.14" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w14">
+            
+                    
+                    如何隐藏柜门和抽屉？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.15" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w15">
+            
+                    
+                    如何正确切梁切柱及撤销？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.16" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w16">
+            
+                    
+                    如何对材质进行编辑？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.17" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w17">
+            
+                    
+                    如何调节灯光？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.18" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w18">
+            
+                    
+                    如何测量产品或物体间的距离？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.19" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w19">
+            
+                    
+                    如何进行引线或文字标注并编辑？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.20" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w20">
+            
+                    
+                    如何在大场景的情况下对软件加速？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.21" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w21">
+            
+                    
+                    如何快速设计出场景方案？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.22" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w22">
+            
+                    
+                    如何对板件进行异形编辑？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.23" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w23">
+            
+                    
+                    房间里面如果有不贴墙的柱子，柜体如何穿过柱子贴墙？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.24" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w24">
+            
+                    
+                    当需要添加罗马柱、柱头和顶线的时候，应该是什么先后顺序？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.25" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w25">
+            
+                    
+                    如何选择加门？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.26" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w26">
+            
+                    
+                    如何操作柜体对齐？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.27" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w27">
+            
+                    
+                    如何针对选择柜体下单和报价？
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2.3.28" data-path="操作规范.html">
+            
+                <a href="操作规范.html#w28">
+            
+                    
+                    如何对全景图进行云发布？
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >第2节：导出CAD异常处理</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x7B2C;2&#x8282;&#xFF1A;&#x5BFC;&#x51FA;cad&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x7B2C;2&#x8282;&#xFF1A;&#x5BFC;&#x51FA;CAD&#x5F02;&#x5E38;&#x5904;&#x7406;</h1>
+<h4 id="&#x4E8C;&#x3001;&#x5BFC;&#x51FA;cad&#x5F02;&#x5E38;&#x5904;&#x7406;">&#x4E8C;&#x3001;&#x5BFC;&#x51FA;CAD&#x5F02;&#x5E38;&#x5904;&#x7406;</h4>
+<p><strong><span id="w1"><font color="#008cff">&#x95EE;&#x9898;&#x4E00;&#xFF1A;CAD&#x5BFC;&#x51FA;&#x7A7A;&#x767D;&#x95EE;&#x9898;</font></span></strong><br>&#x89E3;&#x7B54;&#xFF1A;&#x5BFC;&#x51FA;cad&#x67DC;&#x4F53;&#x56FE;&#x7EB8;&#x65F6;&#x9700;&#x8981;&#x7A0D;&#x7B49;&#x7247;&#x523B;&#x3002;&#x67DC;&#x5B50;&#x6BD4;&#x8F83;&#x590D;&#x6742;&#x65F6;&#xFF0C;&#x66F4;&#x5E94;&#x8010;&#x5FC3;&#x7B49;&#x5F85;&#xFF0C;&#x8FC7;&#x65E9;&#x5E72;&#x6270;cad&#x4F1A;&#x5BFC;&#x81F4;&#x5BFC;&#x51FA;&#x5931;&#x8D25;&#x6216;&#x7F3A;&#x5C11;&#x677F;&#x4EF6;<br>&#x9996;&#x5148;&#x68C0;&#x67E5;&#x8BBE;&#x7F6E;&#x65B9;&#x9762;<br>&#xFF08;1&#xFF09;&#x6253;&#x5F00;CAD&#xFF0C;&#x8F93;&#x5165;&#x5B57;&#x6BCD;op&#x540E;&#x56DE;&#x8F66;&#xFF0C;&#x6309;&#x7167;&#x4E0B;&#x56FE;&#x8BBE;&#x7F6E;&#x5373;&#x53EF;<br><img src="img/p30.png" alt="p30"><br>&#xFF08;2&#xFF09;&#x53F3;&#x51FB;&#x201C;&#x6211;&#x7684;&#x7535;&#x8111;&#x201D;&#xFF0C;&#x70B9;&#x51FB;&#x201C;&#x7BA1;&#x7406;&#x201D;&#xFF0C;&#x8FDB;&#x5165;&#x670D;&#x52A1;&#xFF0C;&#x786E;&#x4FDD;Distributed Transaction Coordinator&#x548C;Remote Procedure Call (RPC) &#x4EE5;&#x53CA;Security Accounts Manager&#x4E09;&#x4E2A;&#x670D;&#x52A1;&#x90FD;&#x662F;&#x5DF2;&#x542F;&#x52A8;&#x72B6;&#x6001;&#xFF0C;&#x5982;&#x679C;&#x6CA1;&#x6709;&#x542F;&#x52A8;&#xFF0C;&#x9F20;&#x6807;&#x53F3;&#x952E;&#x542F;&#x52A8;&#x5B83;&#x3002;<br><img src="img/p31.png" alt="p31"><br><img src="img/p32.png" alt="p32"><br><img src="img/p33.png" alt="p33"><br><img src="img/p34.png" alt="p34">  </p>
+<p>&#xFF08;3&#xFF09;&#x6253;&#x5F00;&#x6CE8;&#x518C;&#x8868;&#xFF0C;&#x5B9A;&#x4F4D;&#x5230;HKey_Users&#x5C55;&#x5F00;&#xFF0C;&#x4E0B;&#x9762;&#x6709;&#x597D;&#x51E0;&#x4E2A;S-1-??????&#x7684;&#xFF0C;&#x627E;&#x5230;&#x81EA;&#x5DF1;&#x8FD9;&#x4E2A;&#x7528;&#x6237;&#xFF0C;&#x901A;&#x5E38;&#x662F;&#x7B2C;&#x4E8C;&#x957F;&#x7684;&#x90A3;&#x4E2A;&#xFF08;&#x4E0D;&#x5E26;_Classes&#x540E;&#x7F00;&#x7684;&#xFF09;&#xFF0C;&#x5C55;&#x5F00;&#xFF0C;&#x5B9A;&#x4F4D;&#x5230;Software/Autodesk/AutoCAD/R18.0/ACAD-8001:804&#xFF08;&#x82F1;&#x6587;&#x7248;&#x7684;&#x5C31;&#x662F;409&#xFF09;&#xFF0C;&#x5B9A;&#x4F4D;&#x5230;InfoCenter&#xFF0C;&#x53F3;&#x8FB9;&#x7684;InfoCenterOn&#xFF0C;&#x53CC;&#x51FB;&#x7F16;&#x8F91;&#x503C;&#xFF0C;&#x6539;&#x4E3A;0&#x5C31;OK&#x4E86;&#x3002;<br><img src="img/p35.png" alt="p35"><br><img src="img/p36.png" alt="p36">  </p>
+<hr>
+<p><strong><span id="w2"><font color="#008cff">&#x95EE;&#x9898;&#x4E8C;&#xFF1A;&#x51FA;&#x73B0;&#x4E0B;&#x5217;&#x5F02;&#x5E38;&#x5F39;&#x7A97;</font></span></strong><br><img src="img/p37.png" alt="p37"><br> &#x89E3;&#x7B54;&#xFF1A;&#x91CD;&#x88C5;CAD&#xFF08;CAD&#x5FC5;&#x987B;&#x4E3A;2012&#x6216;2014&#x7248;&#xFF0C;&#x6CE8;&#x610F;&#xFF1A;&#x4E0D;&#x8981;&#x5378;&#x8F7D;&#x540E;&#x91CD;&#x88C5;&#xFF0C;&#x8981;&#x70B9;cad&#x5378;&#x8F7D;&#x4E4B;&#x65F6;&#x5F39;&#x51FA;&#x7684;&#x7A97;&#x53E3;&#x754C;&#x9762;&#x70B9;&#x91CD;&#x88C5;&#x5373;&#x53EF;&#xFF09;<br><img src="img/p39.png" alt="p39"><br><strong>
+</strong> <span id="w3"><font color="#008cff">&#x95EE;&#x9898;&#x4E09;&#xFF1A;&#x51FA;&#x73B0;&#x4E0B;&#x9762;&#x5F02;&#x5E38;&#x5F39;&#x7A97;</font></span><strong><br><img src="img/p40.png" alt="p40"><br>&#x89E3;&#x7B54;&#xFF1A;&#x70B9;&#x51FB;&#x786E;&#x5B9A;&#x540E;&#x91CD;&#x65B0;&#x5BFC;&#x51FA;CAD&#x5373;&#x53EF;    
+</strong>
+<strong><span id="w4"><font color="#008cff">&#x95EE;&#x9898;&#x56DB;&#xFF1A;&#x51FA;&#x73B0;&#x4E0B;&#x9762;&#x5F02;&#x5E38;&#x5F39;&#x7A97;</font></span></strong><br><img src="img/p41.png" alt="p41"><br>&#x89E3;&#x7B54;&#xFF1A;cad&#x4E2D;&#x6BD2;&#xFF0C;&#x4F7F;&#x7528;&#x6740;&#x6BD2;&#x8F6F;&#x4EF6;&#x6740;&#x6BD2;    </p>
+<hr>
+<p><strong><span id="w5"><font color="#008cff">&#x95EE;&#x9898;&#x4E94;&#xFF1A;&#x65E0;&#x6CD5;&#x6253;&#x5370;&#x5168;&#x90E8;&#x6807;&#x6CE8;</font></span></strong><br><img src="img/p42.png" alt="p42"><br>&#x89E3;&#x7B54;&#xFF1A;&#x5728;&#x6253;&#x4E0D;&#x51FA;&#x6807;&#x6CE8;&#x7684;&#x5E03;&#x5C40;&#x7A97;&#x53E3;&#x5185;&#xFF0C;&#x53F3;&#x952E;--&#x7740;&#x8272;&#x6253;&#x5370;--&#x7EBF;&#x6846;   </p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="异常弹窗处理方法.html#w16" class="navigation navigation-prev " aria-label="Previous page: 场景异常导致的软件关闭">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="导出CAD异常处理.html#w1" class="navigation navigation-next " aria-label="Next page: CAD导出空白问题">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"第2节：导出CAD异常处理","level":"1.2.2","depth":2,"next":{"title":"CAD导出空白问题","level":"1.2.2.1","depth":3,"anchor":"#w1","path":"Chapter1/导出CAD异常处理.md","ref":"Chapter1/导出CAD异常处理.md#w1","articles":[]},"previous":{"title":"场景异常导致的软件关闭","level":"1.2.1.16","depth":3,"anchor":"#w16","path":"Chapter1/异常弹窗处理方法.md","ref":"Chapter1/异常弹窗处理方法.md#w16","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":["toggle-chapters"],"pluginsConfig":{"toggle-chapters":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"Chapter1/导出CAD异常处理.md","mtime":"2019-04-28T11:37:11.578Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-04-28T12:00:35.523Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-toggle-chapters/toggle.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
