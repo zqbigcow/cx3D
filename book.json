@@ -9,22 +9,17 @@
     },
     "structure": {
         "readme": "README.md"
-    }
+    },
     "plugins": [
-        "-sharing",
         "splitter",
         "expandable-chapters-small",
         "anchors",
-        "github",
-        "github-buttons",
-        "donate",
-        "sharing-plus",
         "anchor-navigation-ex",
         "favicon"
     ],
     "pluginsConfig": {
         "github": {
-            "url": "https://github.com/Blankj"
+            "url": "https://github.com/zqbigcow"
         },
         "github-buttons": {
             "buttons": [
@@ -36,12 +31,6 @@
                     "count": true
                 }
             ]
-        },
-        "donate": {
-            "alipay": "./source/images/donate.png",
-            "title": "",
-            "button": "赞赏",
-            "alipayText": " "
         },
         "sharing": {
             "douban": false,
